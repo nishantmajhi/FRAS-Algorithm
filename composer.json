@@ -1,0 +1,27 @@
+{
+    "name": "nishantmajhi/fras",
+    "license": "proprietary",
+    "description": "Field Rank And Sort: ranks records against a query by prefix, LCS and Levenshtein similarity.",
+    "type": "library",
+    "require": {
+        "php": ">=7.4",
+        "ext-mbstring": "*",
+        "ext-json": "*",
+        "ext-pcre": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "classmap": ["src/"]
+    },
+    "autoload-dev": {
+        "classmap": ["legacy/"]
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
